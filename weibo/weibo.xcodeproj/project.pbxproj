@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151363721BF3996900BA5C9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 151363711BF3996900BA5C9A /* main.m */; };
-		151363751BF3996900BA5C9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 151363741BF3996900BA5C9A /* AppDelegate.m */; };
-		151363781BF3996900BA5C9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151363771BF3996900BA5C9A /* ViewController.m */; };
-		1513637B1BF3996900BA5C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151363791BF3996900BA5C9A /* Main.storyboard */; };
 		1513637D1BF3996900BA5C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1513637C1BF3996900BA5C9A /* Assets.xcassets */; };
 		151363801BF3996900BA5C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1513637E1BF3996900BA5C9A /* LaunchScreen.storyboard */; };
 		1513638B1BF3996900BA5C9A /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1513638A1BF3996900BA5C9A /* weiboTests.m */; };
 		151363961BF3996900BA5C9A /* weiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 151363951BF3996900BA5C9A /* weiboUITests.m */; };
+		1521A2561BF489060097809F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A2541BF489060097809F /* AppDelegate.m */; };
+		1521A2571BF489060097809F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A2551BF489060097809F /* main.m */; };
+		1521A25A1BF48A100097809F /* SDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A2591BF48A100097809F /* SDTabBarViewController.m */; };
+		1521A25D1BF48B200097809F /* SDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A25C1BF48B200097809F /* SDHomeViewController.m */; };
+		1521A2601BF48B380097809F /* SDMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A25F1BF48B380097809F /* SDMessageViewController.m */; };
+		1521A2631BF48B560097809F /* SDDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A2621BF48B560097809F /* SDDiscoverViewController.m */; };
+		1521A2661BF48B6A0097809F /* SDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521A2651BF48B6A0097809F /* SDProfileViewController.m */; };
+		1546A1DA1BF5F197008F949C /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1D91BF5F197008F949C /* UIImage+Extension.m */; };
+		1546A1DD1BF636F5008F949C /* SDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1DC1BF636F5008F949C /* SDNavigationController.m */; };
+		1546A1E01BF63752008F949C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1DF1BF63752008F949C /* UIView+Extension.m */; };
+		1546A1E31BF63DF7008F949C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */; };
 		ADD18F04AD9D12D4042AC3CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D42C9D72BBF320254F71CA0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,12 +44,6 @@
 
 /* Begin PBXFileReference section */
 		1513636D1BF3996900BA5C9A /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		151363711BF3996900BA5C9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		151363731BF3996900BA5C9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		151363741BF3996900BA5C9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		151363761BF3996900BA5C9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		151363771BF3996900BA5C9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1513637A1BF3996900BA5C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1513637C1BF3996900BA5C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1513637F1BF3996900BA5C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151363811BF3996900BA5C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +53,28 @@
 		151363911BF3996900BA5C9A /* weiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		151363951BF3996900BA5C9A /* weiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiboUITests.m; sourceTree = "<group>"; };
 		151363971BF3996900BA5C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1521A2531BF489060097809F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1521A2541BF489060097809F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1521A2551BF489060097809F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1521A2581BF48A100097809F /* SDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTabBarViewController.h; sourceTree = "<group>"; };
+		1521A2591BF48A100097809F /* SDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTabBarViewController.m; sourceTree = "<group>"; };
+		1521A25B1BF48B200097809F /* SDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDHomeViewController.h; sourceTree = "<group>"; };
+		1521A25C1BF48B200097809F /* SDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDHomeViewController.m; sourceTree = "<group>"; };
+		1521A25E1BF48B380097809F /* SDMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMessageViewController.h; sourceTree = "<group>"; };
+		1521A25F1BF48B380097809F /* SDMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMessageViewController.m; sourceTree = "<group>"; };
+		1521A2611BF48B560097809F /* SDDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDiscoverViewController.h; sourceTree = "<group>"; };
+		1521A2621BF48B560097809F /* SDDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDiscoverViewController.m; sourceTree = "<group>"; };
+		1521A2641BF48B6A0097809F /* SDProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDProfileViewController.h; sourceTree = "<group>"; };
+		1521A2651BF48B6A0097809F /* SDProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDProfileViewController.m; sourceTree = "<group>"; };
+		1521A2671BF48D730097809F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1546A1D81BF5F197008F949C /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		1546A1D91BF5F197008F949C /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		1546A1DB1BF636F5008F949C /* SDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNavigationController.h; sourceTree = "<group>"; };
+		1546A1DC1BF636F5008F949C /* SDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNavigationController.m; sourceTree = "<group>"; };
+		1546A1DE1BF63752008F949C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		1546A1DF1BF63752008F949C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		1546A1E11BF63DF7008F949C /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		1D42C9D72BBF320254F71CA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3190F8B16FDD28E654C04B0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D44E26F5907094C4EE039361 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,14 +131,7 @@
 		1513636F1BF3996900BA5C9A /* weibo */ = {
 			isa = PBXGroup;
 			children = (
-				151363731BF3996900BA5C9A /* AppDelegate.h */,
-				151363741BF3996900BA5C9A /* AppDelegate.m */,
-				151363761BF3996900BA5C9A /* ViewController.h */,
-				151363771BF3996900BA5C9A /* ViewController.m */,
-				151363791BF3996900BA5C9A /* Main.storyboard */,
-				1513637C1BF3996900BA5C9A /* Assets.xcassets */,
-				1513637E1BF3996900BA5C9A /* LaunchScreen.storyboard */,
-				151363811BF3996900BA5C9A /* Info.plist */,
+				1521A23C1BF487980097809F /* Classes */,
 				151363701BF3996900BA5C9A /* Supporting Files */,
 			);
 			path = weibo;
@@ -124,7 +140,10 @@
 		151363701BF3996900BA5C9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				151363711BF3996900BA5C9A /* main.m */,
+				1513637C1BF3996900BA5C9A /* Assets.xcassets */,
+				1513637E1BF3996900BA5C9A /* LaunchScreen.storyboard */,
+				151363811BF3996900BA5C9A /* Info.plist */,
+				1521A2671BF48D730097809F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,6 +164,210 @@
 				151363971BF3996900BA5C9A /* Info.plist */,
 			);
 			path = weiboUITests;
+			sourceTree = "<group>";
+		};
+		1521A23C1BF487980097809F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2451BF487980097809F /* Main */,
+				1521A2411BF487980097809F /* Home */,
+				1521A24B1BF487980097809F /* Message */,
+				1521A23D1BF487980097809F /* Discover */,
+				1521A24F1BF487980097809F /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1521A23D1BF487980097809F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				1521A23E1BF487980097809F /* Controller */,
+				1521A23F1BF487980097809F /* Model */,
+				1521A2401BF487980097809F /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		1521A23E1BF487980097809F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2611BF48B560097809F /* SDDiscoverViewController.h */,
+				1521A2621BF48B560097809F /* SDDiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1521A23F1BF487980097809F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1521A2401BF487980097809F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1521A2411BF487980097809F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2421BF487980097809F /* Controller */,
+				1521A2431BF487980097809F /* Model */,
+				1521A2441BF487980097809F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1521A2421BF487980097809F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1521A25B1BF48B200097809F /* SDHomeViewController.h */,
+				1521A25C1BF48B200097809F /* SDHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1521A2431BF487980097809F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1521A2441BF487980097809F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1521A2451BF487980097809F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2461BF487980097809F /* Category */,
+				1521A2491BF487980097809F /* Other */,
+				1521A2471BF487980097809F /* Controller */,
+				1521A2481BF487980097809F /* Model */,
+				1521A24A1BF487980097809F /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1521A2461BF487980097809F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1546A1D81BF5F197008F949C /* UIImage+Extension.h */,
+				1546A1D91BF5F197008F949C /* UIImage+Extension.m */,
+				1546A1DE1BF63752008F949C /* UIView+Extension.h */,
+				1546A1DF1BF63752008F949C /* UIView+Extension.m */,
+				1546A1E11BF63DF7008F949C /* UIBarButtonItem+Extension.h */,
+				1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1521A2471BF487980097809F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2581BF48A100097809F /* SDTabBarViewController.h */,
+				1521A2591BF48A100097809F /* SDTabBarViewController.m */,
+				1546A1DB1BF636F5008F949C /* SDNavigationController.h */,
+				1546A1DC1BF636F5008F949C /* SDNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1521A2481BF487980097809F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1521A2491BF487980097809F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2531BF489060097809F /* AppDelegate.h */,
+				1521A2541BF489060097809F /* AppDelegate.m */,
+				1521A2551BF489060097809F /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1521A24A1BF487980097809F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1521A24B1BF487980097809F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				1521A24C1BF487980097809F /* Controller */,
+				1521A24D1BF487980097809F /* Model */,
+				1521A24E1BF487980097809F /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		1521A24C1BF487980097809F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1521A25E1BF48B380097809F /* SDMessageViewController.h */,
+				1521A25F1BF48B380097809F /* SDMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1521A24D1BF487980097809F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1521A24E1BF487980097809F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1521A24F1BF487980097809F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2501BF487980097809F /* Controller */,
+				1521A2511BF487980097809F /* Model */,
+				1521A2521BF487980097809F /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1521A2501BF487980097809F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1521A2641BF48B6A0097809F /* SDProfileViewController.h */,
+				1521A2651BF48B6A0097809F /* SDProfileViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1521A2511BF487980097809F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1521A2521BF487980097809F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A2E2930B32F4690DA991A540 /* Frameworks */ = {
@@ -228,6 +451,7 @@
 		151363651BF3996900BA5C9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SD;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = jisudong;
 				TargetAttributes = {
@@ -271,7 +495,6 @@
 			files = (
 				151363801BF3996900BA5C9A /* LaunchScreen.storyboard in Resources */,
 				1513637D1BF3996900BA5C9A /* Assets.xcassets in Resources */,
-				1513637B1BF3996900BA5C9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,9 +552,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151363781BF3996900BA5C9A /* ViewController.m in Sources */,
-				151363751BF3996900BA5C9A /* AppDelegate.m in Sources */,
-				151363721BF3996900BA5C9A /* main.m in Sources */,
+				1546A1E01BF63752008F949C /* UIView+Extension.m in Sources */,
+				1521A2631BF48B560097809F /* SDDiscoverViewController.m in Sources */,
+				1521A25D1BF48B200097809F /* SDHomeViewController.m in Sources */,
+				1521A2571BF489060097809F /* main.m in Sources */,
+				1546A1DD1BF636F5008F949C /* SDNavigationController.m in Sources */,
+				1521A2561BF489060097809F /* AppDelegate.m in Sources */,
+				1546A1E31BF63DF7008F949C /* UIBarButtonItem+Extension.m in Sources */,
+				1521A2661BF48B6A0097809F /* SDProfileViewController.m in Sources */,
+				1521A2601BF48B380097809F /* SDMessageViewController.m in Sources */,
+				1521A25A1BF48A100097809F /* SDTabBarViewController.m in Sources */,
+				1546A1DA1BF5F197008F949C /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,14 +598,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		151363791BF3996900BA5C9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1513637A1BF3996900BA5C9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1513637E1BF3996900BA5C9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,6 +694,8 @@
 			baseConfigurationReference = 3190F8B16FDD28E654C04B0D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/weibo/PrefixHeader.pch";
 				INFOPLIST_FILE = weibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -484,6 +709,8 @@
 			baseConfigurationReference = D44E26F5907094C4EE039361 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/weibo/PrefixHeader.pch";
 				INFOPLIST_FILE = weibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

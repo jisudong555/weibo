@@ -10,4 +10,19 @@
 
 @implementation UIBarButtonItem (Extension)
 
++ (UIBarButtonItem *)itemWithImage:(NSString *)imageName highlightImage:(NSString *)highlightImageName target:(id)target action:(SEL)action
+{
+    UIButton *button = [[UIButton alloc] init];
+    
+    [button setBackgroundImage:[UIImage imageWithName:imageName] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageWithName:highlightImageName] forState:UIControlStateHighlighted];
+    
+    //设置button的尺寸
+    button.size = button.currentBackgroundImage.size;
+    
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
 @end

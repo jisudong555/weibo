@@ -22,6 +22,21 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_friendsearch" highlightImage:@"navigationbar_friendsearch_highlighted" target:self action:@selector(friendsearch)];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_pop" highlightImage:@"navigationbar_pop_highlighted" target:self action:@selector(pop)];
+    
+}
+
+- (void)friendsearch
+{
+    
+}
+
+- (void)pop
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

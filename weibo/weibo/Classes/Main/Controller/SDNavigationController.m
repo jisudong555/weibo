@@ -24,14 +24,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.viewControllers.count > 0) {// 如果现在push的不是栈底控制器(最先push进来的那个控制器)
+        viewController.hidesBottomBarWhenPushed = YES;
+        
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_back" highlightImage:@"navigationbar_back_highlighted" target:viewController action:@selector(back)];
+        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_more" highlightImage:@"navigationbar_more_highlighted" target:viewController action:@selector(more)];
+    }
+    [super pushViewController:viewController animated:animated];
 }
-*/
+
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
+}
+
+- (void)more
+{
+    [self popToRootViewControllerAnimated:YES];
+}
 
 @end

@@ -10,4 +10,6 @@
 
 @interface UIBarButtonItem (Extension)
 
++ (UIBarButtonItem *)itemWithImage:(NSString *)imageName highlightImage:(NSString *)highlightImageName target:(id)target action:(SEL)action;
+
 @end
