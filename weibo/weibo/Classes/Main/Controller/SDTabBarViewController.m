@@ -12,8 +12,9 @@
 #import "SDDiscoverViewController.h"
 #import "SDProfileViewController.h"
 #import "SDNavigationController.h"
+#import "SDTabBar.h"
 
-@interface SDTabBarViewController ()
+@interface SDTabBarViewController () <SDTabBarDelegate>
 
 @end
 
@@ -23,6 +24,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self addAllChildVcs];
+    
+    [self addCustomTabBar];
+    
+}
+
+- (void)addCustomTabBar
+{
+    SDTabBar *customTabBar = [[SDTabBar alloc] init];
+    customTabBar.tabBarDelegate = self;
+    
+    // 更换系统自带的tabBar
+    [self setValue:customTabBar forKey:@"tabBar"];
+}
+
+
+- (void)addAllChildVcs
+{
     SDHomeViewController *home = [[SDHomeViewController alloc] init];
     [self addOneChildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     

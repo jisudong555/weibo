@@ -14,10 +14,18 @@
 
     #import "UIImage+Extension.h"
     #import "UIView+Extension.h"
-    #import "UIBarButtonItem+Extension.h"   
+    #import "UIBarButtonItem+Extension.h" 
+
+#ifdef DEBUG
+#define SDLog(...) NSLog(__VA_ARGS__)
+#else
+#define SDLog(...)
+#endif
 
 #define SDRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
 
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#define SDNavigationTitleFont [UIFont boldSystemFontOfSize:20]
 
 #endif /* PrefixHeader_pch */

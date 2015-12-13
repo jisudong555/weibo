@@ -7,8 +7,10 @@
 //
 
 #import "SDHomeViewController.h"
+#import "SDTitleButton.h"
+#import "SDPopMenu.h"
 
-@interface SDHomeViewController ()
+@interface SDHomeViewController () <SDPopMenuDelegate>
 
 @end
 
@@ -27,6 +29,26 @@
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_pop" highlightImage:@"navigationbar_pop_highlighted" target:self action:@selector(pop)];
     
+    SDTitleButton *titleButton = [[SDTitleButton alloc] init];
+    titleButton.width = 100;
+    titleButton.height = 35;
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageWithName:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    [titleButton setBackgroundImage:[UIImage resizeImage:@"navigationbar_filter_background_highlighted"] forState:UIControlStateNormal];
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleButton;
+}
+
+- (void)titleClick:(SDTitleButton *)button
+{
+    [button setImage:[UIImage imageWithName:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.backgroundColor = [UIColor redColor];
+    
+    SDPopMenu *popMenu = [[SDPopMenu alloc] initWithContentView:btn];
+    popMenu.delegate = self;
+    [popMenu showInRect:CGRectMake(100, 100, 100, 100)];
 }
 
 - (void)friendsearch
@@ -37,6 +59,13 @@
 - (void)pop
 {
     
+}
+
+#pragma mark - SDPopMenuDelegate
+- (void)popMenuDidDismissed:(SDPopMenu *)popMenu
+{
+    SDTitleButton *titleButton = (SDTitleButton *)self.navigationItem.titleView;
+    [titleButton setImage:[UIImage imageWithName:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {

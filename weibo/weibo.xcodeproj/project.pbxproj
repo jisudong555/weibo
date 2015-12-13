@@ -22,6 +22,10 @@
 		1546A1DD1BF636F5008F949C /* SDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1DC1BF636F5008F949C /* SDNavigationController.m */; };
 		1546A1E01BF63752008F949C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1DF1BF63752008F949C /* UIView+Extension.m */; };
 		1546A1E31BF63DF7008F949C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */; };
+		154AB9DD1C1DB6D500155FC1 /* SDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 154AB9DC1C1DB6D500155FC1 /* SDTabBar.m */; };
+		15E2B7991BF9B0BC00CADDD7 /* SDSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2B7981BF9B0BC00CADDD7 /* SDSearchBar.m */; };
+		15E2B79C1BF9C07600CADDD7 /* SDTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2B79B1BF9C07600CADDD7 /* SDTitleButton.m */; };
+		15E2B79F1BF9CB0500CADDD7 /* SDPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2B79E1BF9CB0500CADDD7 /* SDPopMenu.m */; };
 		ADD18F04AD9D12D4042AC3CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D42C9D72BBF320254F71CA0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,14 @@
 		1546A1DF1BF63752008F949C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1546A1E11BF63DF7008F949C /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		154AB9DB1C1DB6D500155FC1 /* SDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTabBar.h; sourceTree = "<group>"; };
+		154AB9DC1C1DB6D500155FC1 /* SDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTabBar.m; sourceTree = "<group>"; };
+		15E2B7971BF9B0BC00CADDD7 /* SDSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchBar.h; sourceTree = "<group>"; };
+		15E2B7981BF9B0BC00CADDD7 /* SDSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSearchBar.m; sourceTree = "<group>"; };
+		15E2B79A1BF9C07600CADDD7 /* SDTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTitleButton.h; sourceTree = "<group>"; };
+		15E2B79B1BF9C07600CADDD7 /* SDTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTitleButton.m; sourceTree = "<group>"; };
+		15E2B79D1BF9CB0500CADDD7 /* SDPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPopMenu.h; sourceTree = "<group>"; };
+		15E2B79E1BF9CB0500CADDD7 /* SDPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPopMenu.m; sourceTree = "<group>"; };
 		1D42C9D72BBF320254F71CA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3190F8B16FDD28E654C04B0D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D44E26F5907094C4EE039361 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +219,8 @@
 		1521A2401BF487980097809F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15E2B7971BF9B0BC00CADDD7 /* SDSearchBar.h */,
+				15E2B7981BF9B0BC00CADDD7 /* SDSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,6 +254,10 @@
 		1521A2441BF487980097809F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15E2B79A1BF9C07600CADDD7 /* SDTitleButton.h */,
+				15E2B79B1BF9C07600CADDD7 /* SDTitleButton.m */,
+				15E2B79D1BF9CB0500CADDD7 /* SDPopMenu.h */,
+				15E2B79E1BF9CB0500CADDD7 /* SDPopMenu.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +318,8 @@
 		1521A24A1BF487980097809F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				154AB9DB1C1DB6D500155FC1 /* SDTabBar.h */,
+				154AB9DC1C1DB6D500155FC1 /* SDTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,12 +572,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E2B79C1BF9C07600CADDD7 /* SDTitleButton.m in Sources */,
 				1546A1E01BF63752008F949C /* UIView+Extension.m in Sources */,
 				1521A2631BF48B560097809F /* SDDiscoverViewController.m in Sources */,
+				15E2B7991BF9B0BC00CADDD7 /* SDSearchBar.m in Sources */,
 				1521A25D1BF48B200097809F /* SDHomeViewController.m in Sources */,
 				1521A2571BF489060097809F /* main.m in Sources */,
 				1546A1DD1BF636F5008F949C /* SDNavigationController.m in Sources */,
+				15E2B79F1BF9CB0500CADDD7 /* SDPopMenu.m in Sources */,
 				1521A2561BF489060097809F /* AppDelegate.m in Sources */,
+				154AB9DD1C1DB6D500155FC1 /* SDTabBar.m in Sources */,
 				1546A1E31BF63DF7008F949C /* UIBarButtonItem+Extension.m in Sources */,
 				1521A2661BF48B6A0097809F /* SDProfileViewController.m in Sources */,
 				1521A2601BF48B380097809F /* SDMessageViewController.m in Sources */,

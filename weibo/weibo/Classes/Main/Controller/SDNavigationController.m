@@ -19,6 +19,50 @@
     // Do any additional setup after loading the view.
 }
 
++ (void)initialize
+{
+    [self setupNavigationTheme];
+    [self setupBarButtonItemTheme];
+}
+
++ (void)setupNavigationTheme
+{
+    UINavigationBar *appearance = [UINavigationBar appearance];
+    if (!iOS7) {
+        [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background"] forBarMetrics:UIBarMetricsDefault];
+    }
+    
+    NSMutableDictionary *navigationAttrs = [NSMutableDictionary dictionary];
+    navigationAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    navigationAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+//    navigationAttrs[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
+//    NSShadow *shadow = [[NSShadow alloc] init];
+//    shadow.shadowOffset = CGSizeMake(0, 0);
+//    navigationAttrs[NSShadowAttributeName] = shadow;
+    [appearance setTitleTextAttributes:navigationAttrs];
+}
+
++ (void)setupBarButtonItemTheme
+{
+    UIBarButtonItem *appearance = [UIBarButtonItem appearance];
+    
+    NSMutableDictionary *normal = [NSMutableDictionary dictionary];
+    normal[NSFontAttributeName] = [UIFont systemFontOfSize:15];
+    normal[NSForegroundColorAttributeName] = [UIColor orangeColor];
+//    normal[NSShadowAttributeName] = [NSValue valueWithUIOffset:UIOffsetZero];
+    [appearance setTitleTextAttributes:normal forState:UIControlStateNormal];
+    
+    NSMutableDictionary *highlight = [NSMutableDictionary dictionaryWithDictionary:normal];
+    highlight[NSForegroundColorAttributeName] = [UIColor redColor];
+    [appearance setTitleTextAttributes:highlight forState:UIControlStateHighlighted];
+    
+    NSMutableDictionary *disable = [NSMutableDictionary dictionaryWithDictionary:normal];
+    disable[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [appearance setTitleTextAttributes:disable forState:UIControlStateDisabled];
+    
+    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

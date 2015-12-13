@@ -7,6 +7,7 @@
 //
 
 #import "SDDiscoverViewController.h"
+#import "SDSearchBar.h"
 
 @interface SDDiscoverViewController ()
 
@@ -22,6 +23,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    SDSearchBar *searchBar = [SDSearchBar searchBar];
+    searchBar.width = 300;
+    searchBar.height = 30;
+    self.navigationItem.titleView = searchBar;
 }
 
 - (void)didReceiveMemoryWarning {
