@@ -33,11 +33,11 @@
 - (void)setupPlusButton
 {
     UIButton *plusButton = [[UIButton alloc] init];
-    [plusButton setBackgroundImage:[UIImage imageWithName:@""] forState:UIControlStateNormal];
-    [plusButton setBackgroundImage:[UIImage imageWithName:@""] forState:UIControlStateHighlighted];
+    [plusButton setBackgroundImage:[UIImage imageWithName:@"tabbar_compose_button"] forState:UIControlStateNormal];
+    [plusButton setBackgroundImage:[UIImage imageWithName:@"tabbar_compose_button_highlighted"] forState:UIControlStateHighlighted];
     
-    [plusButton setImage:[UIImage imageWithName:@""] forState:UIControlStateNormal];
-    [plusButton setImage:[UIImage imageWithName:@""] forState:UIControlStateHighlighted];
+    [plusButton setImage:[UIImage imageWithName:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
+    [plusButton setImage:[UIImage imageWithName:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
     
     [plusButton addTarget:self action:@selector(plusButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:plusButton];

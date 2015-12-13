@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SDTabBarViewController.h"
+#import "SDNewfeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,18 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    
-    self.window.rootViewController = [[SDTabBarViewController alloc] init];
+//    NSString *localVersion = [[NSUserDefaults standardUserDefaults] objectForKey:@"CFBundleVersion"];
+//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+//     // @"CFBundleVersion" == (__bridge NSString *)kCFBundleVersionKey
+//    if ([localVersion isEqualToString:currentVersion]) {
+//        self.window.rootViewController = [[SDTabBarViewController alloc] init];
+//    } else {
+        self.window.rootViewController = [[SDNewfeatureViewController alloc] init];
+//        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"CFBundleVersion"];
+//        // 立即同步 （如果不立即同步，系统会随机找个时间同步）
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//    }
+//    
     
     [self.window makeKeyAndVisible];
     

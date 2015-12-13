@@ -12,6 +12,7 @@
 #import "SDDiscoverViewController.h"
 #import "SDProfileViewController.h"
 #import "SDNavigationController.h"
+#import "SDComposeViewController.h"
 #import "SDTabBar.h"
 
 @interface SDTabBarViewController () <SDTabBarDelegate>
@@ -89,14 +90,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - SDTabBarDelegate
+- (void)tabBarDidClickedPlusButton:(SDTabBar *)tabBar
+{
+    SDComposeViewController *compose = [[SDComposeViewController alloc] init];
+    [self presentViewController:compose animated:YES completion:nil];
 }
-*/
 
 @end
