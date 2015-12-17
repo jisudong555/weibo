@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SDTabBarViewController.h"
 #import "SDNewfeatureViewController.h"
+#import "SDAuthorViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +29,7 @@
 //    if ([localVersion isEqualToString:currentVersion]) {
 //        self.window.rootViewController = [[SDTabBarViewController alloc] init];
 //    } else {
-        self.window.rootViewController = [[SDNewfeatureViewController alloc] init];
+        self.window.rootViewController = [[SDAuthorViewController alloc] init];
 //        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"CFBundleVersion"];
 //        // 立即同步 （如果不立即同步，系统会随机找个时间同步）
 //        [[NSUserDefaults standardUserDefaults] synchronize];

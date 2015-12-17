@@ -23,6 +23,7 @@
 		1546A1E01BF63752008F949C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1DF1BF63752008F949C /* UIView+Extension.m */; };
 		1546A1E31BF63DF7008F949C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */; };
 		154AB9DD1C1DB6D500155FC1 /* SDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 154AB9DC1C1DB6D500155FC1 /* SDTabBar.m */; };
+		157858751C21CE8800DB8414 /* MBProgressHUD+SD.m in Sources */ = {isa = PBXBuildFile; fileRef = 157858741C21CE8800DB8414 /* MBProgressHUD+SD.m */; };
 		15E2B7991BF9B0BC00CADDD7 /* SDSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2B7981BF9B0BC00CADDD7 /* SDSearchBar.m */; };
 		15E2B79C1BF9C07600CADDD7 /* SDTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2B79B1BF9C07600CADDD7 /* SDTitleButton.m */; };
 		15E2B79F1BF9CB0500CADDD7 /* SDPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2B79E1BF9CB0500CADDD7 /* SDPopMenu.m */; };
@@ -84,6 +85,8 @@
 		1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		154AB9DB1C1DB6D500155FC1 /* SDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTabBar.h; sourceTree = "<group>"; };
 		154AB9DC1C1DB6D500155FC1 /* SDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTabBar.m; sourceTree = "<group>"; };
+		157858731C21CE8800DB8414 /* MBProgressHUD+SD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+SD.h"; sourceTree = "<group>"; };
+		157858741C21CE8800DB8414 /* MBProgressHUD+SD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+SD.m"; sourceTree = "<group>"; };
 		15E2B7971BF9B0BC00CADDD7 /* SDSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSearchBar.h; sourceTree = "<group>"; };
 		15E2B7981BF9B0BC00CADDD7 /* SDSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSearchBar.m; sourceTree = "<group>"; };
 		15E2B79A1BF9C07600CADDD7 /* SDTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTitleButton.h; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 				1546A1DF1BF63752008F949C /* UIView+Extension.m */,
 				1546A1E11BF63DF7008F949C /* UIBarButtonItem+Extension.h */,
 				1546A1E21BF63DF7008F949C /* UIBarButtonItem+Extension.m */,
+				157858731C21CE8800DB8414 /* MBProgressHUD+SD.h */,
+				157858741C21CE8800DB8414 /* MBProgressHUD+SD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 				1521A25D1BF48B200097809F /* SDHomeViewController.m in Sources */,
 				1521A2571BF489060097809F /* main.m in Sources */,
 				1546A1DD1BF636F5008F949C /* SDNavigationController.m in Sources */,
+				157858751C21CE8800DB8414 /* MBProgressHUD+SD.m in Sources */,
 				15E2B79F1BF9CB0500CADDD7 /* SDPopMenu.m in Sources */,
 				1521A2561BF489060097809F /* AppDelegate.m in Sources */,
 				154AB9DD1C1DB6D500155FC1 /* SDTabBar.m in Sources */,
